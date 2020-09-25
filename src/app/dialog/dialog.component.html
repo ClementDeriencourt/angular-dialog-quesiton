@@ -1,0 +1,16 @@
+<ol>
+  <li>
+    <mat-form-field>
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+<!--    raised : style bouton-->
+  </li>
+  <li *ngIf="animal">
+
+    You have chose: <i>{{animal}}</i> like animal
+  </li>
+</ol>
